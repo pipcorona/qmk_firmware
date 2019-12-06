@@ -42,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* JEDI
  * ,-----------------------------------------------------------------------------------.
- * | 1    |   Q  |   W  |   E  |   R  |      |      |      |      |      |      |      |
+ * | 1    |   Q  |   W  |   E  |   R  |  ESC |      |      |      |      |      |      |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
  * | 2    |   A  |   S  |   D  |   F  |      |      |      |      |      |      |      |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
@@ -52,7 +52,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------------------------------'
  */
 [_JEDI] = LAYOUT_ortho_4x12( \
-   KC_1,     KC_Q,    KC_W,    KC_E,    KC_R,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,  XXXXXXX,  XXXXXXX, \
+   KC_1,     KC_Q,    KC_W,    KC_E,    KC_R,    KC_ESC,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,  XXXXXXX,  XXXXXXX, \
    KC_2,     KC_A,    KC_S,    KC_D,    KC_F,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,  XXXXXXX,  XXXXXXX, \
    KC_3,     KC_Z,    KC_X,    KC_C,    XXXXXXX, KC_M,       XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,  XXXXXXX,  XXXXXXX, \
    KC_LSFT,  XXXXXXX, XXXXXXX, XXXXXXX, LOWER,   KC_SPC,     XXXXXXX,    RAISE,      XXXXXXX,    XXXXXXX,  XXXXXXX,  XXXXXXX  \
