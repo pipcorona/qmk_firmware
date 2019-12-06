@@ -60,20 +60,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* Numpad
  * ,-----------------------------------------------------------------------------------.
- * | Esc  |   9  |   8  |   7  | Del  | Bksp |   7  |   8  |   9  |   /  |   =  | Bksp |
+ * | Esc  |   9  |   8  |   7  | Del  | Bksp |   7  |   8  |   9  |   +  |  =   | Bksp |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * | Tab  |   6  |   5  |   4  | Down |  Up  |   4  |   5  |   6  |   *  |  Tab |  Up  |
+ * | Tab  |   6  |   5  |   4  | Down |  Up  |   4  |   5  |   6  |   +  |  /   | Del  |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
- * |Nmlock|   3  |   2  |   1  | Left |Right |   1  |   2  |   3  |   -  |Enter | Down |
+ * |Nmlock|   3  |   2  |   1  | Left |Right |   1  |   2  |   3  |Enter |  *   | Tab  |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |Numpad|   M  |   .  |   0  |Enter |Space |   0  |   0  |   .  |   +  | Left |Right |
+ * |Numpad|   M  |   .  |   0  |Enter |Space |   0  |   0  |   .  |Enter |  -   | Esc  | 
  * `-----------------------------------------------------------------------------------'
  */
 [_NUMPAD] = LAYOUT_ortho_4x12( \
-   KC_ESC,  KC_P9,  KC_P8,    KC_P7,    KC_DEL,    KC_BSPC,   KC_P7,    KC_P8,    KC_P9,    KC_PSLS,  KC_PEQL,   KC_BSPC, \
-   KC_TAB,  KC_P6,  KC_P5,    KC_P4,    KC_DOWN,   KC_UP,     KC_P4,    KC_P5,    KC_P6,    KC_PAST,  KC_TAB,    KC_UP, \
-   KC_NLCK, KC_P3,  KC_P2,    KC_P1,    KC_LEFT,   KC_RIGHT,  KC_P1,    KC_P2,    KC_P3,    KC_PMNS,  KC_PENT,   KC_DOWN , \
-   _______, KC_M,   KC_PDOT,  KC_P0,    KC_PENT,   KC_SPC,    KC_P0,    KC_P0,    KC_PDOT,  KC_PPLS,  KC_LEFT,   KC_RGHT  \
+   KC_ESC,  KC_P9,  KC_P8,    KC_P7,    KC_DEL,    KC_BSPC,   KC_P7,    KC_P8,    KC_P9,    KC_PPLS,  KC_PEQL,   KC_BSPC, \
+   KC_TAB,  KC_P6,  KC_P5,    KC_P4,    KC_DOWN,   KC_UP,     KC_P4,    KC_P5,    KC_P6,    KC_PPLS,  KC_PSLS,   KC_DEL, \
+   KC_NLCK, KC_P3,  KC_P2,    KC_P1,    KC_LEFT,   KC_RIGHT,  KC_P1,    KC_P2,    KC_P3,    KC_PENT,  KC_PAST,   KC_TAB , \
+   _______, KC_M,   KC_PDOT,  KC_P0,    KC_PENT,   KC_SPC,    KC_P0,    KC_P0,    KC_PDOT,  KC_PENT,  KC_PMNS,   KC_ESC  \
 ),
 
 /* Lower
